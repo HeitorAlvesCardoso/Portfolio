@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heitor Alves Cardoso - Desenvolvedor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <h1>Heitor Cardoso</h1>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle">
+                <span class="sun">☀️</span>
+                <span class="moon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="typing-text">Olá, eu sou <span>Heitor Alves Cardoso</span></h1>
+            <p class="fade-in">Desenvolvedor em formação com foco em Back-end</p>
+            <a href="#about" class="btn fade-in">Conheça mais</a>
+        </div>
+        <div class="parallax-bg"></div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="animate-on-scroll">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-img animate-on-scroll">
+                    <img src="" alt="Heitor Alves Cardoso" id="profile-img">
+                </div>
+                <div class="about-text animate-on-scroll">
+                    <p>Meu nome é Heitor Alves Cardoso, tenho 16 anos e atualmente estou cursando o ensino médio e curso técnico no Cotemig Floresta.</p>
+                    <p>Tenho a intenção de ser um programador fullstack. Estou sendo introduzido na área e pretendo planejar projetos futuros.</p>
+                    <p>Atualmente estou aprendendo HTML, CSS, JavaScript e C#, sempre buscando evoluir e aprender novas tecnologias.</p>
+                    <button class="btn-modal" onclick="openModal()">Saiba mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="animate-on-scroll">Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-item animate-on-scroll">
+                    <h3>HTML</h3>
+                    <p>Estruturação de páginas web</p>
+                    <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                </div>
+                <div class="skill-item animate-on-scroll">
+                    <h3>CSS</h3>
+                    <p>Estilização e layout responsivo</p>
+                    <div class="skill-bar"><div class="skill-progress" data-width="65"></div></div>
+                </div>
+                <div class="skill-item animate-on-scroll">
+                    <h3>JavaScript</h3>
+                    <p>Interatividade e funcionalidades</p>
+                    <div class="skill-bar"><div class="skill-progress" data-width="60"></div></div>
+                </div>
+                <div class="skill-item animate-on-scroll">
+                    <h3>C#</h3>
+                    <p>Desenvolvimento back-end</p>
+                    <div class="skill-bar"><div class="skill-progress" data-width="55"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="animate-on-scroll">Projetos</h2>
+            <div class="projects-content animate-on-scroll">
+                <p>Atualmente estou me dedicando aos estudos e não possuo projetos pessoais finalizados.</p>
+                <p>Em breve, pretendo desenvolver projetos que demonstrem minhas habilidades em desenvolvimento web e back-end.</p>
+                <a href="https://github.com/HeitorAlvesCardoso" target="_blank" class="github-link">
+                    <span>🔗</span> Acesse meu GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="animate-on-scroll">Contato</h2>
+            <form class="contact-form animate-on-scroll">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="email@exemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Sua mensagem..." required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            
+            <p>Email: heitorac2010@gmail.com | Telefone: (31) 98225-0569</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Mais sobre mim</h3>
+            <p>Sou um jovem apaixonado por tecnologia, sempre em busca de novos desafios. Meu objetivo é me tornar um desenvolvedor fullstack completo, contribuindo para projetos inovadores.</p>
+            <p>Além da programação, gosto de estudar novas tecnologias e tendências do mercado de desenvolvimento.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
